@@ -32,7 +32,7 @@ def browse_hash(h, curyaml)
     if not h.empty?
       result = @tr.translate :from => @lgstart, :to => @lgdest, :text =>h
 
-      #in case of not translation
+      #in case of no translation
       if result == h
         result = 'NT - ' + result
       end
@@ -65,7 +65,7 @@ uri = get_defined_proxy
 end
 
 if 2 != ARGV.length
-  puts "Help: ruby runtrad.rb file language_target"
+  puts "Help: ruby do_translation.rb file language_target"
   exit
 end
 
