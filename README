@@ -1,0 +1,17 @@
+== Welcome to DoTranslation v0.1
+
+This utility translate a yaml file into another yaml file using google translator
+
+It keeps the same hierarchy as the in yml file.
+All texts not translated are prefixed with "NT - "
+
+Command line is:
+
+ruby do_translation.rb file.yml lg_dest
+
+The source language is the one defined in the first line of the source yaml file as shown below:
+
+en:
+  item1 : "text one"
+  ...
+
